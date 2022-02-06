@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
 if (!db.data.chats[m.chat].rpg && m.isGroup) throw global.rpg
-let hasil = Math.floor(Math.random() * 1000)
+let hasil = Math.floor(Math.random() * 5000)
 global.db.data.users[m.sender].exp += hasil * 1 // Number(hasil)
    await m.reply(`Selamat! Anda mendapatkan ${hasil} exp!`)
 }
